@@ -1,0 +1,113 @@
+.skills {
+    padding-top: 100px;
+    overflow-x: hidden;
+}
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper {
+    width: 500px;
+    height: 350px;
+    padding-top: 50px;
+  }
+.swiper-wrapper {
+}
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.ri-double-quotes-l {
+    display: block;
+    text-align: center;
+    width: 60px;
+    padding: 15px 15px 15px 20px;
+    font-size: 30px;
+    color: var(--primary-color);
+    border-radius: 5px;
+    -webkit-box-shadow: 13px 8px 15px -4px rgba(0,0,0,0.31); 
+    box-shadow: 13px 8px 15px -4px rgba(0,0,0,0.31);
+}
+.swiper-slide__text.text {
+    max-width: 470px;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.swiper-slide__details {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.swiper-slide-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.swiper-slide__client {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.swiper-slide__client p:first-child{
+    color: var( --text-dark);
+    font-weight: 600;
+    font-size: 18px;
+}
+.swiper-slide__client p:last-child{
+    color: var(--text-light);
+    font-size: 16px;
+}
+.skills__image {
+    width: 550px;
+    position: relative;
+}
+.skills__image::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    z-index: -2;
+}
+.skills__img {
+    max-width:  500px;
+    max-height: 370px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media (max-width: 1100px){
+    .swiper {
+        width: 400px;
+    }
+}
+@media (max-width: 1040px){
+    .skills {
+        padding-top: 0;
+    }
+    .inner {
+       display: grid;
+       grid-template-rows: 2;
+       row-gap: 70px;
+    }
+}
+
+@media (max-width: 590px){
+    .inner {
+        row-gap: 60px;
+     }
+    .swiper {
+        width: 300px;
+        height: 400px;
+    }
+    .skills__image {
+        width: 100%;
+    }
+}
